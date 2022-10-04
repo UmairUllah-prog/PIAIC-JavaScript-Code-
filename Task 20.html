@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Think of something you could store in a array. For example, you could make a list of mountains, rivers, countries, cities, languages, or anything else you’d like. Write a program that creates a list containing these items. -->
+    <script>
+        var range = prompt("input the number of elements you want to insert in a list: ");
+        var arr = new Array()
+        for (var x = 0; x < range; x++) {
+            var names = prompt("input names: ");
+            arr.push(names);
+        }
+        document.write(arr);
+    </script>
+</body>
+</html>

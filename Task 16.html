@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+ <!-- More Guests: You just found a bigger dinner table, so now more space is available. Think of three more guests to invite to dinner.
+• Start with your program from Exercise 15. Add a print statement to the end of your program informing people that you found a bigger dinner table.
+
+• Add one new guest to the beginning of your array.
+
+• Add one new guest to the middle of your array. • Use append() to add one new guest to the end of your list. • Print a new set of invitation messages, one for each person in your list. -->
+
+</head>
+<body>
+    <script>
+        var frnds = ['Umair', 'Salman', 'tiger','Saif'];
+        var frnds1 = frnds.splice(1,2,);
+        var invited = frnds.forEach(function (x) {
+            document.write(x + " You are invited for dinner at 10pm tomorrow." + "<br>")
+        })
+        document.write("<h2>guest not coming </h2>")
+
+        document.write("guests not coming: " + frnds1)
+        document.write("<br>")
+        var updated_lst = new Array();
+        updated_lst[0] = "usman";
+        updated_lst[1] = "Zubair";
+
+        document.write("<h2>updated list </h2>")
+        var update = frnds.concat(updated_lst);
+        var dinner = update.forEach(function (x) {
+            document.write(x + " You are invited for dinner at 10pm tomorrow." + "<br>")
+        })
+        document.write("<br>")
+        document.write("i found a bigger dinner table")
+        document.write("<br>")
+        document.write("<h2>after putting element in last </h2>")
+        document.write(update.push("owais"))
+        document.write("<br>")
+        document.write(update)
+        document.write("<br>")
+        var lst = update[2] = "Abdullah";
+        document.write(update);
+        document.write("<br>")
+
+        var lst = update.forEach(function (x) {
+            document.write("new invitations: " + x + "<br>")
+        })
+    
+
+    </script>
+</body>
+</html>

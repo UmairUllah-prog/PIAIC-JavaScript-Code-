@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!---
+    Large Shirts: Modify the make_shirt() function so that shirts are large by default with a message that reads I love JavaScript. Make a large shirt and a medium shirt with the default
+     message, and a shirt of any size with a different message.
+    -->
+    <script>
+        function make_shirt(size = 'Large',text_message = 'I love JS') {
+            document.write('<br>')
+            document.write("I want the " + size + " Shirt")
+            document.write('<br>')
+            document.write("Print " + text_message + " on Shirt")
+            
+        }
+        make_shirt('Medium')
+        make_shirt('Medium', 'TypeScript')
+
+    </script>
+</body>
+</html>

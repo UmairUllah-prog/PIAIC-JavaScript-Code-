@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Shrinking Guest List: You just found out that your new dinner table won’t arrive in time for the dinner, and you have space for only two guests.
+• Start with your program from Exercise 16. Add a new line that prints a message saying that you can invite only two people for dinner.
+
+• Remove guests from your list one at a time until only two names remain in your list. Each time you pop a name from your list, print a message to that person letting them know you’re sorry you can’t invite them to dinner.
+
+• Print a message to each of the two people still on your list, letting them know they’re still invited.
+
+• Remove the last two names from your list, so you have an empty list. Print your list to make sure you actually have an empty list at the end of your program. -->
+</head>
+<body>
+    <script>
+         var frnds = ['Umair', 'Salman', 'tiger','Saif'];
+        var frnds1 = frnds.splice(1,2,);
+        var invited = frnds.forEach(function (x) {
+            document.write(x + " You are invited for dinner at 10pm tomorrow." + "<br>")
+        })
+        document.write("<h2>guest not coming </h2>")
+
+        document.write("guests not coming: " + frnds1)
+        document.write("<br>")
+        var updated_lst = new Array();
+        updated_lst[0] = "usman";
+        updated_lst[1] = "Zubair";
+
+        document.write("<h2>updated list </h2>")
+        var update = frnds.concat(updated_lst);
+        var dinner = update.forEach(function (x) {
+            document.write(x + " You are invited for dinner at 10pm tomorrow." + "<br>")
+        })
+        document.write("<br>")
+        document.write("i found a bigger dinner table")
+        document.write("<br>")
+        document.write("<h2>after putting element in last </h2>")
+        document.write(update.push("owais"))
+        document.write("<br>")
+        document.write(update)
+        document.write("<br>")
+        var lst = update[2] = "Abdullah";
+        document.write(update);
+        document.write("<br>")
+
+        var lst = update.forEach(function (x) {
+            document.write("new invitations: " + x + "<br>")
+        })
+        document.write("<h2>We can invite only two guests now</h2>")
+
+        for (var x = 0;update.length>2;x++) {
+            var element = update.pop(update[x]);
+            document.write("sorry you are not invited to the dinner " + element + "<br>")
+        }
+        document.write("you are still invited: " + update)
+        var lst = update.splice(0,2,);
+        // document.write(lst);
+        document.write("<br>")
+        document.write("<h2>final list </h2>")
+        document.write("people left for dinner: " + update)
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        Cars: Write a function that stores information about a car in a Object. 
+        The function should always receive a manufacturer and a model name. 
+        It should then accept an arbitrary number of keyword arguments. 
+        Call the function with the required information and two other name-value pairs, 
+        such as a color or an optional feature. 
+        Print the Object that’s returned to make sure all the information was stored correctly.
+    -->
+    <script>
+        function Cars(manufacturer,model,color){
+
+            document.write(manufacturer + ' ' + model + ' '+color);
+            document.write('<br>')
+           
+        }
+
+        Cars('Toyota',2022,'Black')
+        Cars('Suzuki',2015,'Sand Beige')
+        Cars('Honda',2021,'White')
+        
+    </script>
+</body>
+</html>

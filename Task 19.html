@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var frnds = ['Umair', 'Salman', 'tiger','Saif'];
+        var frnds1 = frnds.splice(1,2,);
+        var dinner = frnds.forEach(function (x) {
+            document.write(x + " You are invited for dinner at 10pm tomorrow." + "<br>")
+        })
+        document.write("<h2>guest not coming </h2>")
+
+        document.write("guests not coming: " + frnds1)
+        document.write("<br>")
+        var updated_lst = new Array();
+        updated_lst[0] = "usman";
+        updated_lst[1] = "Zubair";
+
+        document.write("<h2>updated list </h2>")
+        var update = frnds.concat(updated_lst);
+        var dinner = update.forEach(function (x) {
+            document.write(x + " You are invited for dinner at 10pm tomorrow." + "<br>")
+
+        })
+        document.write("total guests are: 5")
+
+    </script>
+</body>
+</html>

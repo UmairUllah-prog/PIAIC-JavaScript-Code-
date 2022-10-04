@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!---
+    
+    Ordinal Numbers: Ordinal numbers indicate their position in a array, such as 1st or 2nd. Most ordinal numbers end in th, except 1, 2, and 3.
+
+• Store the numbers 1 through 9 in a array.
+
+• Loop through the array.
+
+• Use an if-else chain inside the loop to print the proper ordinal ending for each number. Your output should read "1st 2nd 3rd 4th 5th 6th 7th 8th 9th", and each result should be on a separate line.
+      
+    -->
+    <script>
+
+        var arr = [1,2,3,4,5,6,7,8,9]
+
+        for (num in arr){
+
+            if (1 == arr[num]){
+                    document.write('1st');
+                }
+            else if(2 == arr[num] ){
+
+                document.write('<br>')
+                document.write('2nd')
+            }
+            else if(3 == arr[num] ){
+
+                document.write('<br>')
+                document.write('3rd')
+            }
+            else if(4 == arr[num] ){
+
+                    document.write('<br>')
+                    document.write('4th')
+                }
+            else if(5 == arr[num] ){
+
+                document.write('<br>')
+                document.write('5th')
+            }
+            else if(6 == arr[num] ){
+
+                document.write('<br>')
+                document.write('6th')
+            }
+
+            else if(7 == arr[num] ){
+
+                document.write('<br>')
+                document.write('7th')
+            }
+
+            else if(8 == arr[num] ){
+
+                document.write('<br>')
+                document.write('8th')
+            }
+            else if(9 == arr[num] ){
+
+                document.write('<br>')
+                document.write('9th')
+            }
+
+            else{
+
+
+                document.write('aaa')
+            }
+        }
+
+    </script>
+
+</body>
+</html>
